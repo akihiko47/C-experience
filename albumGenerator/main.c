@@ -1,33 +1,63 @@
 # include <stdio.h>
+# include <stdlib.h>
+
+struct album{
+  char year[16];
+  char group[64];
+  char name[64];
+  struct album * last;
+};
 
 int main(){
   int creating;
-  char boofer[128];
   
-  char group[64];
-  char year[16];
-  char name[128];
+  struct album * last;
+  struct album * tmp;
+  char answer[1];
+  
+  FILE * file;
 
-  printf("This program will create .txt file to add there your favorite albums\n");
-  printf("Print E to stop program\n\n");
-
+  last = NULL;
   creating = 1;
   while (creating) {
-    printf("Enter album name or 'E' to exit:\n");
-    gets(name);
+    tmp = malloc(sizeof(struct album));
 
-    if (*name == 'E') {
+    printf("Enter album name: ");
+    gets(tmp->name);
+
+    printf("Enter group name: ");
+    gets(tmp->group);
+
+    printf("Enter album year: ");
+    gets(tmp->year);
+
+    tmp->last = last;
+
+    last = tmp;
+
+    printf("Would you like to add more albums? (y/n)\n");
+    gets(answer);
+
+    if (*answer == 'n') {
       creating = 0;
-      break;
     }
-
-    printf("Enter group name:\n");
-    gets(group);
-
-    printf("Enter year of album creation:\n");
-    gets(year);
-
-    printf("\n%s\n%s\n%s\n\n", name, group, year);
   }
+
+  if (file = fopen("albums.txt", "w")) {
+    while (1) {
+      if (!last) {
+	break;
+      }
+
+      fprintf(file, "%s\t%s\t%s\n", last->name, last->group, last->year);
+      tmp = last;
+      last = last->last;
+      free(tmp);
+    }
+  } else {
+    printf("ERROR while opening file!\n");
+  }
+
+  fclose(file);
   return 0;
 }
