@@ -1,0 +1,1 @@
+int intfromstr(char * str);
