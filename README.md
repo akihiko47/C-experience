@@ -10,7 +10,7 @@ This project reads the albums you enter and writes them to the `albums.txt` file
 Folder of this project: `albumGenerator`
 
 ## Integers from string
-This program can pull a number from your string and convert it to int type. This project is an experiment with simple data types. Example of how the program works: `a12b34c5d` will be converted to `12345`.
+This program can pull a number from your string and convert it to int type. This project is an experiment with simple data types. Example of how the program works: `a12b34c5d` will be converted to `12345`. You can see tests in `tests.c`.
 
 Function description: `int intfromstr(char * str);`
 
