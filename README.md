@@ -15,3 +15,12 @@ This program can pull a number from your string and convert it to int type. This
 Function description: `int intfromstr(char * str);`
 
 Later i will add new projects with new data structures.
+
+## Search algorithms
+### Linear search
+File - `search/linearsearch.c`
+Tests - `search/tests.c`
+
+Function description - `int linearsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
+
+Function returns index of element `x` in array. If `x` not in array function will return `-1`
