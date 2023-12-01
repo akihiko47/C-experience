@@ -12,7 +12,9 @@ This project reads the albums you enter and writes them to the `albums.txt` file
 Folder of this project: `albumGenerator`
 
 ## Integers from string
-File - `intsFromString/main.c` function file - `intsFromString/intfromstr.c`
+Main file - `intsFromString/main.c` 
+Function file - `intsFromString/intfromstr.c` 
+Tests - `intsFromString/tests.c` 
 
 This program can pull a number from your string and convert it to int type. This project is an experiment with simple data types. Example of how the program works: `a12b34c5d` will be converted to `12345`. You can see tests in `tests.c`.
 
@@ -20,8 +22,8 @@ Function description: `int intfromstr(char * str);`
 
 ## Search algorithms
 ### Linear search
-File - `search/linearsearch.c`
-Tests - `search/tests.c`
+File - `search/linearsearch.c` 
+Tests - `search/tests.c` 
 
 Function description - `int linearsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
 
