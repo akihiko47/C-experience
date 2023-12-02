@@ -21,10 +21,20 @@ This program can pull a number from your string and convert it to int type. This
 Function description: `int intfromstr(char * str);`
 
 ## Search algorithms
+
+
 ### Linear search
-File - `search/linearsearch.c` 
-Tests - `search/tests.c` 
+File - `Search/LinearSearch/linearsearch.c` 
+Tests - `Search/BinarySearch/tests.c` 
 
 Function description - `int linearsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
+
+Function returns index of element `x` in array. If `x` not in array function will return `-1`
+
+### Binary search
+File - `Search/BinarySearch/binsearch.c` 
+Tests - `Search/BinarySearch/tests.c` 
+
+Function description - `int binsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
 
 Function returns index of element `x` in array. If `x` not in array function will return `-1`
