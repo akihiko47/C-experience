@@ -25,7 +25,7 @@ Function description: `int intfromstr(char * str);`
 
 ### Linear search
 File - `Search/LinearSearch/linearsearch.c` 
-Tests - `Search/BinarySearch/tests.c` 
+Tests - `Search/LinearSearch/tests.c` 
 
 Function description - `int linearsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
 
