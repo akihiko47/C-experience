@@ -32,6 +32,7 @@ Function description - `int linearsearch(int array[], int n, int x);` where `arr
 Function returns index of element `x` in array. If `x` not in array function will return `-1`
 
 ### Binary search
+![binary search](https://github.com/akihiko47/C-experience/blob/main/images/binary-search.jpg?raw=true)
 File - `Search/BinarySearch/binsearch.c`  
 Tests - `Search/BinarySearch/tests.c` 
 
