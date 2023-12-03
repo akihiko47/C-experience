@@ -1,6 +1,6 @@
 # 📋 C experience 📋
 
-![logo](https://github.com/akihiko47/C-experience/blob/main/logo.jpg?raw=true)
+![logo](https://github.com/akihiko47/C-experience/blob/main/images/logo.jpg?raw=true)
 
 This repository contains my C projects. I will try to implement different data structures and algorithms using this language. 
 
@@ -41,7 +41,7 @@ Function description - `int binsearch(int array[], int n, int x);` where `array`
 Function returns index of element `x` in array. If `x` not in array function will return `-1`. The x array must be sorted!
 
 ### Naive string search
-![naive string search](https://github.com/akihiko47/C-experience/blob/main/images/logo.jpg?raw=true)
+![naive string search](https://github.com/akihiko47/C-experience/blob/main/images/naive-string-search.jpg?raw=true)
 
 File - `Search/StringSearchNaive/strsearchnaive.c`  
 Tests - `Search/StringSearchNaive/tests.c` 
