@@ -38,7 +38,7 @@ Tests - `Search/BinarySearch/tests.c`
 
 Function description - `int binsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
 
-Function returns index of element `x` in array. If `x` not in array function will return `-1`. The x array must be sorted!
+Function returns index of element `x` in array. If `x` not in array function will return `-1`. The array must be sorted!
 
 ### Naive string search
 ![naive string search](https://github.com/akihiko47/C-experience/blob/main/images/naive-string-search.jpg?raw=true)
