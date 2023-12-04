@@ -20,7 +20,7 @@ This program can pull a number from your string and convert it to int type. This
 
 Function description: `int intfromstr(char * str);`
 
-# Search algorithms
+# Search algorithms 🔍
 
 
 ## Linear search
