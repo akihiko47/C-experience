@@ -27,18 +27,18 @@ Function description: `int intfromstr(char * str);`
 File - `Search/LinearSearch/linearsearch.c`  
 Tests - `Search/LinearSearch/tests.c` 
 
-Function description - `int linearsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
+Function description - `int linearsearch(int array[], int n, int x);` where array - array where you need to find element, n - number of elements in array, x - element that you need to find.
 
-Function returns index of element `x` in array. If `x` not in array function will return `-1`
+Function returns index of element `x` in array. If `x` not in array function will return -1
 
 ### Binary search
 ![binary search](https://github.com/akihiko47/C-experience/blob/main/images/binary-search.jpg?raw=true)
 File - `Search/BinarySearch/binsearch.c`  
 Tests - `Search/BinarySearch/tests.c` 
 
-Function description - `int binsearch(int array[], int n, int x);` where `array` - array where you need to find element, `n` - number of elements in array, `x` - element that you need to find.
+Function description - `int binsearch(int array[], int n, int x);` where array - array where you need to find element, n - number of elements in array, x - element that you need to find.
 
-Function returns index of element `x` in array. If `x` not in array function will return `-1`. The array must be sorted!
+Function returns index of element x in array. If x not in array function will return -1. The array must be sorted!
 
 ### Naive string search
 ![naive string search](https://github.com/akihiko47/C-experience/blob/main/images/naive-string-search.jpg?raw=true)
@@ -46,6 +46,16 @@ Function returns index of element `x` in array. If `x` not in array function wil
 File - `Search/StringSearchNaive/strsearchnaive.c`  
 Tests - `Search/StringSearchNaive/tests.c` 
 
-Function description - `int strsearchnaive(char p[], char s[]);` where `p` (pattern) - part string that you want to find in s, `s` (string) - string where you want to find p.
+Function description - `int strsearchnaive(char p[], char s[]);` where p (pattern) - part string that you want to find in s, s (string) - string where you want to find p.
+
+The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
+
+### Knuth–Morris–Pratt string search algorithm
+![kmp string search](https://github.com/akihiko47/C-experience/blob/main/images/stringsearchkmp.png?raw=true)
+
+File - `Search/StringSearchKMP/strsearchkmp.c`  
+Tests - `Search/StringSearchKMP/tests.c`
+
+Function description - `int strsearchkmp(char p[], char s[]);` where p (pattern) - part string that you want to find in s, s (string) - string where you want to find p.
 
 The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
