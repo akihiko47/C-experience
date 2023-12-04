@@ -20,10 +20,10 @@ This program can pull a number from your string and convert it to int type. This
 
 Function description: `int intfromstr(char * str);`
 
-## Search algorithms
+# Search algorithms
 
 
-### Linear search
+## Linear search
 File - `Search/LinearSearch/linearsearch.c`  
 Tests - `Search/LinearSearch/tests.c` 
 
@@ -31,7 +31,7 @@ Function description - `int linearsearch(int array[], int n, int x);` where arra
 
 Function returns index of element `x` in array. If `x` not in array function will return -1
 
-### Binary search
+## Binary search
 ![binary search](https://github.com/akihiko47/C-experience/blob/main/images/binary-search.jpg?raw=true)
 File - `Search/BinarySearch/binsearch.c`  
 Tests - `Search/BinarySearch/tests.c` 
@@ -40,7 +40,7 @@ Function description - `int binsearch(int array[], int n, int x);` where array -
 
 Function returns index of element x in array. If x not in array function will return -1. The array must be sorted!
 
-### Naive string search
+## Naive string search
 ![naive string search](https://github.com/akihiko47/C-experience/blob/main/images/naive-string-search.jpg?raw=true)
 
 File - `Search/StringSearchNaive/strsearchnaive.c`  
@@ -50,7 +50,7 @@ Function description - `int strsearchnaive(char p[], char s[]);` where p (patter
 
 The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
 
-### Knuth–Morris–Pratt string search algorithm
+## Knuth–Morris–Pratt string search algorithm
 ![kmp string search](https://github.com/akihiko47/C-experience/blob/main/images/stringsearchkmp.png?raw=true)
 
 File - `Search/StringSearchKMP/strsearchkmp.c`  
