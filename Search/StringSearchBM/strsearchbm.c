@@ -14,32 +14,28 @@ int strsearchbm(char p[], char s[]) {
 
   // PART 1
   // generating array d
-  // difficulty O(m)
-  
-  
-  
+  for (i = 0; i < 256; i++) {
+    d[i] = m;
+  }
+  for (i = 0; i < m; i++) {
+    d[p[i]] = m - 1 - i;
+  }
 
   // PART 2
   // searching substring p in string s
-  // difficulty O(n)
-  i = 0;
-  j = 0;
-  while (i < n) {  // while string s not ended
-    if (s[i] == p[j]) {
-      i++;
-      j++;
-      if (j == m) {
-	return i-j;  // p in s
-      }
-    } else if (j == 0) {
-      i++;
-      if (i == n) {
-	return -1;  // p not in s
-      }
-    } else {
-      j = d[j-1];
+  i = m - 1;
+  while (i < n) {
+    j = m - 1;
+    while (j >= 0 && s[i] == p[j]) {
+      i--;
+      j--;
     }
+
+    if (j < 0) {
+      return i + 1;
+    }
+
+    i += d[s[i]];
   }
-  
   return -1;
 };

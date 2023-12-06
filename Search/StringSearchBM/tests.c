@@ -34,7 +34,6 @@ int main() {
   result = strsearchbm(part, initial);
   runtest(result, needed);
 
-  
   strcpy(part, "moon");
   needed = -1;
   result = strsearchbm(part, initial);
