@@ -50,7 +50,7 @@ Function description - `int strsearchnaive(char p[], char s[]);` where p (patter
 
 The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
 
-## Knuth–Morris–Pratt string search algorithm
+## Knuth–Morris–Pratt (KMP) string search algorithm
 ![kmp string search](https://github.com/akihiko47/C-experience/blob/main/images/stringsearchkmp.png?raw=true)
 
 File - `Search/StringSearchKMP/strsearchkmp.c`  
@@ -59,3 +59,14 @@ Tests - `Search/StringSearchKMP/tests.c`
 Function description - `int strsearchkmp(char p[], char s[]);` where p (pattern) - part string that you want to find in s, s (string) - string where you want to find p.
 
 The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
+
+## Boyer–Moore (BM) string-search algorithm
+![bm string search](https://github.com/akihiko47/C-experience/blob/main/images/stringsearchbm.jpg?raw=true)
+
+File - `Search/StringSearchBM/strsearchbm.c`  
+Tests - `Search/StringSearchBM/tests.c`
+
+Function description - `int strsearchbm(char p[], char s[]);` where p (pattern) - part string that you want to find in s, s (string) - string where you want to find p.
+
+The function returns the index of the first appearance of p in s. If there is no p in s, the function returns -1.
+
